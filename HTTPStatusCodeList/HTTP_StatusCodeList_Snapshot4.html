@@ -1,0 +1,1320 @@
+<!-- Start of script !-->
+<!DOCTYPE html>
+<HTML>
+<BODY>
+<HEAD>
+<!-- Favicon link here !-->
+<!-- .ico !--><!-- 01 !--<!-- Favicon !--><link rel="icon" href="HTTP_LockIconCustom.ico" type="image/x-icon"/><!-- The favicon for this page !--><!-- external resource !-->
+<!-- Favicon will be a lock icon !-->
+<meta>
+	<meta charset="UTF-16">
+</meta>
+<TITLE>HTTP Status code list - SNU HTTP</TITLE>
+<BODY BGCOLOR="SILVER">
+<ruby>
+<rt><rp></rp></rt>
+</ruby>
+<?
+// No PHP available
+?>
+<script>
+// Start of script
+// JavaScript console
+console.log("This page doesn't appear to be having any issues with HTTP");
+console.log("==\nJavaScript console for the HTTP status code list page");
+// End of script
+</script>
+<script>
+// Start of script
+// HTTP code (in alert boxes)
+// 1.x.x range
+function HTTP100_AlertMessage1() {
+	alert("About HTTP 100 - Continue\n\nThe server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it shouldn't send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server doesn't support expectations (this is the case, for example, of HTTP/1.0 servers).");
+}
+function HTTP101_AlertMessage1() {
+	alert("About HTTP 101 - Switching Protocols\n\nThe requester has asked the server to switch protocols and the server has agreed to do so.");
+}
+function HTTP102_AlertMessage1() {
+	alert("About HTTP 102 - Processing\n\nA WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost.");
+}
+function HTTP103_AlertMessage1() {
+	alert("About HTTP 103 - Early hints\n\nUsed to return some response headers before final HTTP message.");
+}
+// 2.x.x range
+function HTTP200_AlertMessage1() {
+	alert("About HTTP 200 -OK\nStandard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.");
+}
+function HTTP201_AlertMessage1() {
+	alert("About HTTP 201 - Created\nThe request has been fulfilled, resulting in the creation of a new resource.");
+}
+function HTTP202_AlertMessage1() {
+	alert("About HTTP 202 - Accepted\nThe request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.");
+}
+function HTTP203_AlertMessage1() {
+	alert("About HTTP 203 - Non-Authoritative Information (since HTTP/1.1)\nThe server is a transforming proxy (e.g. a Web accelerator) that received a 200 OK from its origin, but is returning a modified version of the origin's response.");
+}
+function HTTP204_AlertMessage1() {
+	alert("About HTTP 204 - No content\nThe server successfully processed the request and is not returning any content.");
+}
+function HTTP205_AlertMessage1() {
+	alert("About HTTP 205 - Reset content\nThe server successfully processed the request, but is not returning any content. Unlike a 204 response, this response requires that the requester reset the document view.");
+}
+function HTTP206_AlertMessage1() {
+	alert("About HTTP 206 - Partial Content (RFC 7233)\nThe server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.");
+}
+function HTTP207_AlertMessage1() {
+	alert("About HTTP 207 - Multi-Status (WebDAV; RFC 4918)\nThe message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made.");
+}
+function HTTP208_AlertMessage1() {
+	alert("About HTTP 208 - Already Reported (WebDAV; RFC 5842)\nThe members of a DAV binding have already been enumerated in a preceding part of the (multistatus) response, and are not being included again.");
+}
+function HTTP226_AlertMessage1() {
+	alert("About HTTP 226 - IM Used (RFC 3229)\nThe server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.");
+}
+// 3.x.x range
+function HTTP300_AlertMessage1() {
+	alert("About HTTP 300 - Multiple choices\nIndicates multiple options for the resource from which the client may choose (via agent-driven content negotiation). For example, this code could be used to present multiple video format options, to list files with different filename extensions, or to suggest word-sense disambiguation.");
+}
+function HTTP301_AlertMessage1() {
+	alert("About HTTP 301 - Moved permanently\nThis and all future requests should be directed to the given URI.");
+}
+function HTTP302_AlertMessage1() {
+	alert("About HTTP 302 -Found (Previously ''Moved temporarily''\nTells the client to look at (browse to) another URL. 302 has been superseded by 303 and 307. This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was ''Moved Temporarily''),[22] but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.[23] However, some Web applications and frameworks use the 302 status code as if it were the 303.");
+}
+function HTTP303_AlertMessage1() {
+	alert("About HTTP 303 - See Other (since HTTP/1.1)\nThe response to the request can be found under another URI using the GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a new GET request to the given URI.");
+}
+function HTTP304_AlertMessage1() {
+	alert("About HTTP 304 - Not Modified (RFC 7232)\nIndicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.");
+}
+function HTTP305_AlertMessage1() {
+	alert("About HTTP 305 - Use Proxy (since HTTP/1.1)\nThe requested resource is available only through a proxy, the address for which is provided in the response. Many HTTP clients (such as Mozilla Firefox and Internet Explorer) do not correctly handle responses with this status code, primarily for security reasons.");
+}
+function HTTP306_AlertMessage1() {
+	alert("About HTTP 306 - Switch Proxy\nNo longer used. Originally meant ''Subsequent requests should use the specified proxy.''");
+}
+function HTTP307_AlertMessage1() {
+	alert("About HTTP 307 - Temporary Redirect (since HTTP/1.1)\nIn this case, the request should be repeated with another URI; however, future requests should still use the original URI. In contrast to how 302 was historically implemented, the request method is not allowed to be changed when reissuing the original request. For example, a POST request should be repeated using another POST request.");
+}
+function HTTP308_AlertMessage1() {
+	alert("About HTTP 308 - Permanent Redirect (RFC 7538)\nThe request and all future requests should be repeated using another URI. 307 and 308 parallel the behaviors of 302 and 301, but do not allow the HTTP method to change. So, for example, submitting a form to a permanently redirected resource may continue smoothly.");
+}
+// 4.x.x range
+function HTTP400_AlertMessage1() {
+	alert("About HTTP 400 - Bad request\nThe server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, size too large, invalid request message framing, or deceptive request routing).");
+}
+function HTTP401_AlertMessage1() {
+	alert("About HTTP 401 - Unauthorized (RFC 7235)\nSimilar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. See Basic access authentication and Digest access authentication. 401 semantically means ''unauthenticated'', i.e. the user does not have the necessary credentials. Note: Some sites incorrectly issue HTTP 401 when an IP address is banned from the website (usually the website domain) and that specific address is refused permission to access a website.");
+}
+function HTTP402_AlertMessage1() {
+	alert("About HTTP 402 - Payment required\nReserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used. Google Developers API uses this status if a particular developer has exceeded the daily limit on requests. Sipgate uses this code if an account does not have sufficient funds to start a call. Shopify uses this code when the store has not paid their fees and is temporarily disabled. ");
+}
+function HTTP403_AlertMessage1() {
+	alert("About HTTP 403 - Forbidden\nThe request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource, or may need an account of some sort.");
+}
+function HTTP404_AlertMessage1() {
+	alert("About HTTP 404 - Not found\nThe requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.");
+}
+function HTTP405_AlertMessage1() {
+	alert("About HTTP 405 - Method Not Allowed\nA request method is not supported for the requested resource; for example, a GET request on a form that requires data to be presented via POST, or a PUT request on a read-only resource.");
+}
+function HTTP406_AlertMessage1() {
+	alert("About HTTP 406 - Not Acceptable\nThe requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request. See Content negotiation.");
+}
+function HTTP407_AlertMessage1() {
+	alert("About HTTP 407 - Proxy Authentication Required (RFC 7235)\nThe client must first authenticate itself with the proxy.");
+}
+function HTTP408_AlertMessage1() {
+	alert("About HTTP 408 - Request Timeout\nThe server timed out waiting for the request. According to HTTP specifications: ''The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time.''");
+}
+function HTTP409_AlertMessage1() {
+	alert("About HTTP 409 - Conflict\nIndicates that the request could not be processed because of conflict in the current state of the resource, such as an edit conflict between multiple simultaneous updates.");
+}
+function HTTP410_AlertMessage1() {
+	alert("About HTTP 410 - Gone\nIndicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a ''404 Not Found'' may be used instead.");
+}
+function HTTP411_AlertMessage1() {
+	alert("About HTTP 411 - Length required\nThe request did not specify the length of its content, which is required by the requested resource.");
+}
+function HTTP412_AlertMessage1() {
+	alert("About HTTP 412 - Precondition Failed (RFC 7232)\nThe server does not meet one of the preconditions that the requester put on the request.");
+}
+function HTTP413_AlertMessage1() {
+	alert("About HTTP 413 - Payload Too Large (RFC 7231)\nThe request is larger than the server is willing or able to process. Previously called ''Request Entity Too Large''.");
+}
+function HTTP414_AlertMessage1() {
+	alert("About HTTP 414 - URI Too Long (RFC 7231)\nhe URI provided was too long for the server to process. Often the result of too much data being encoded as a query-string of a GET request, in which case it should be converted to a POST request. Called ''Request-URI Too Long'' previously.");
+}
+function HTTP415_AlertMessage1() {
+	alert("About HTTP 415 - Unsupported Media Type\nThe request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.");
+}
+function HTTP416_AlertMessage1() {
+	alert("About HTTP 416 - Range Not Satisfiable (RFC 7233)\nThe client has asked for a portion of the file (byte serving), but the server cannot supply that portion. For example, if the client asked for a part of the file that lies beyond the end of the file. Called ''Requested Range Not Satisfiable'' previously.");
+}
+function HTTP417_AlertMessage1() {
+	alert("About HTTP 417 - Expectation Failed\nThe server cannot meet the requirements of the Expect request-header field.");
+}
+function HTTP418_AlertMessage1() {
+	alert("About HTTP 418 - I'm a teapot (RFC 2324, RFC 7168)\nThis code was defined in 1998 as one of the traditional IETF April Fools' jokes, in RFC 2324, Hyper Text Coffee Pot Control Protocol, and is not expected to be implemented by actual HTTP servers. The RFC specifies this code should be returned by teapots requested to brew coffee. This HTTP status is used as an Easter egg in some websites, including Google.com.");
+}
+function HTTP421_AlertMessage1() {
+	alert("About HTTP 421 - Misdirected Request (RFC 7540)\nThe request was directed at a server that is not able to produce a response (for example because of connection reuse).");
+}
+function HTTP422_AlertMessage1() {
+	alert("About HTTP 422 - Unprocessable Entity (WebDAV; RFC 4918)\nThe request was well-formed but was unable to be followed due to semantic errors.");
+}
+function HTTP423_AlertMessage1() {
+	alert("About HTTP 423 - Locked (WebDAV; RFC 4918)\nThe resource that is being accessed is locked.");
+}
+function HTTP424_AlertMessage1() {
+	alert("About HTTP 424 - Failed Dependency (WebDAV; RFC 4918)\nThe request failed because it depended on another request and that request failed (e.g., a PROPPATCH).");
+}
+function HTTP426_AlertMessage1() {
+	alert("About HTTP 426 - Upgrade required\nThe client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field.");
+}
+function HTTP428_AlertMessage1() {
+	alert("About HTTP 428 - Precondition Required (RFC 6585)\nThe origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.");
+}
+function HTTP429_AlertMessage1() {
+	alert("About HTTP 429 - Too Many Requests (RFC 6585)\nThe user has sent too many requests in a given amount of time. Intended for use with rate- limiting schemes.");
+}
+function HTTP431_AlertMessage1() {
+	alert("About HTTP 431 - Request Header Fields Too Large (RFC 6585)\nThe server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.");
+}
+function HTTP451_AlertMessage1() {
+	alert("About HTTP 451 - Unavailable For Legal Reasons (RFC 7725)\nA server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource. The code 451 was chosen as a reference to the novel Fahrenheit 451 (see the Acknowledgements in the RFC).");
+}
+// 5.x.x range
+function HTTP500_AlertMessage1() {
+	alert("About HTTP 500 - Internal Server Error\nA generic error message, given when an unexpected condition was encountered and no more specific message is suitable.");
+}
+function HTTP501_AlertMessage1() {
+	alert("About HTTP 501 - Not Implemented\nThe server either does not recognize the request method, or it lacks the ability to fulfil the request. Usually this implies future availability (e.g., a new feature of a web-service API).");
+}
+function HTTP502_AlertMessage1() {
+	alert("About HTTP 502 - Bad Gateway\nThe server was acting as a gateway or proxy and received an invalid response from the upstream server.");
+}
+function HTTP503_AlertMessage1() {
+	alert("About HTTP 503 - Service unavailable\nThe server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.");
+}
+function HTTP504_AlertMessage1() {
+	alert("About HTTP 504 - Gateway timeout\nThe server was acting as a gateway or proxy and did not receive a timely response from the upstream server.");
+}
+function HTTP505_AlertMessage1() {
+	alert("About HTTP 505 - HTTP Version Not Supported\nThe server does not support the HTTP protocol version used in the request.");
+}
+function HTTP506_AlertMessage1() {
+	alert("About HTTP 506 - Variant Also Negotiates (RFC 2295)\nTransparent content negotiation for the request results in a circular reference.");
+}
+function HTTP507_AlertMessage1() {
+	alert("About HTTP 507 - Insufficient Storage (WebDAV; RFC 4918)\nThe server is unable to store the representation needed to complete the request.");
+}
+function HTTP508_AlertMessage1() {
+	alert("About HTTP 508 - Loop Detected (WebDAV; RFC 5842)\nThe server detected an infinite loop while processing the request (sent instead of 208 Already Reported).");
+}
+// 509 Doesn't exist
+function HTTP510_AlertMessage1() {
+	alert("About HTTP 510 - Not Extended (RFC 2774)\nFurther extensions to the request are required for the server to fulfil it.");
+}
+function HTTP511_AlertMessage1() {
+	alert("About HTTP 511 - Network Authentication Required (RFC 6585)\nThe client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network (e.g., ''captive portals'' used to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot).");
+}
+// Microsoft range
+
+// NGinx range
+
+// Cloudflare range
+
+// Other range
+
+// More functions for the rest of the messages go here
+// Script version: 2 (December 20th 2019)
+// End of script
+</script>
+<style>
+/* Headings */
+H1 {
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H2 {
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H3 {
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H4 {
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H5 {
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+H6 {
+	color: black;
+	font-family: "Liberation Serif";
+	/*
+	font-size: 15px;
+	font-size: large;
+	font-size: 150%
+	*/
+	text-shadow: 0px 0px #000000;
+}
+</style>
+<!-- Divider !-->
+<style>
+/* Rich text */
+p {
+	color: black;
+	font-family: "Liberation Serif";
+}
+a {
+	color: navy;
+	font-family: "Tahoma";
+}
+</style>
+<style>
+/* Transparent boxes */
+div.background {
+	background: url(klematis.jpg) repeat;
+	border: 2px solid black;
+}
+div.transbox {
+	margin-top: 0px;
+	margin-bottom: 0px; 
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+div.transbox p {
+	margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+	font-weight: bold;
+	color: #ffffff;
+}
+</style>
+</HEAD>
+<HR>
+<header>
+<img src="HTTP_LockIconCustom.ico" alt="LOCK_HTTP_SECURE" width="200" height="200">
+<p><a href="HTTP_LockIconCustom.ico">View page Favicon</a></p>
+<p><a href="HTTP_LockIconCustom.png">View page Favicon draft</a></p>
+<p><a href="HTTP_LockIconCustom.xcf">View page Favicon project</a></p>
+<HR>
+<H2><button><H3><a href="about:blank">Go back</a></H3></button></H2>
+<H1>List of HTTP status codes (100-506)</H1>
+</header>
+<HR>
+<header>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1>Index</H1></summary>
+		<HR>
+		<details><summary><H1><a href="#1RANGE">1.xx</a></H1></summary>
+		<H2><a href="#HTTP100">100</a></H2>
+		<H2><a href="#HTTP101">101</a></H2>
+		<H2><a href="#HTTP102">102</a></H2>
+		<H2><a href="#HTTP103">103</a></H2>
+		</details>
+		<HR>
+		<details><summary><H1><a href="#2RANGE">2.xx</a></H1></summary>
+		<H2><a href="#HTTP200">200</a></H2>
+		<H2><a href="#HTTP201">201</a></H2>
+		<H2><a href="#HTTP202">202</a></H2>
+		<H2><a href="#HTTP203">203</a></H2>
+		<H2><a href="#HTTP204">204</a></H2>
+		<H2><a href="#HTTP205">205</a></H2>
+		<H2><a href="#HTTP206">206</a></H2>
+		<H2><a href="#HTTP207">207</a></H2>
+		<H2><a href="#HTTP208">208</a></H2>
+		<H2><a href="#HTTP226">226</a></H2>
+		</details>
+		<HR>
+		<details><summary><H1><a href="#3RANGE">3.xx</a></H1></summary>
+		<H2><a href="#HTTP300">300</a></H2>
+		<H2><a href="#HTTP301">301</a></H2>
+		<H2><a href="#HTTP302">302</a></H2>
+		<H2><a href="#HTTP303">303</a></H2>
+		<H2><a href="#HTTP304">304</a></H2>
+		<H2><a href="#HTTP305">305</a></H2>
+		<H2><a href="#HTTP306">306</a></H2>
+		<H2><a href="#HTTP307">307</a></H2>
+		<H2><a href="#HTTP308">308</a></H2>
+		</details>
+		<HR>
+		<details><summary><H1><a href="#4RANGE">4.xx</a></H1></summary>
+		<H2><a href="#HTTP400">400</a></H2>
+		<H2><a href="#HTTP401">401</a></H2>
+		<H2><a href="#HTTP402">402</a></H2>
+		<H2><a href="#HTTP403">403</a></H2>
+		<H2><a href="#HTTP404">404</a></H2>
+		<H2><a href="#HTTP405">405</a></H2>
+		<H2><a href="#HTTP406">406</a></H2>
+		<H2><a href="#HTTP407">407</a></H2>
+		<H2><a href="#HTTP408">408</a></H2>
+		<H2><a href="#HTTP409">409</a></H2>
+		<H2><a href="#HTTP410">410</a></H2>
+		<H2><a href="#HTTP411">411</a></H2>
+		<H2><a href="#HTTP412">412</a></H2>
+		<H2><a href="#HTTP413">413</a></H2>
+		<H2><a href="#HTTP414">414</a></H2>
+		<H2><a href="#HTTP415">415</a></H2>
+		<H2><a href="#HTTP416">416</a></H2>
+		<H2><a href="#HTTP417">417</a></H2>
+		<H2><a href="#HTTP418">418</a></H2>
+		<H2><a href="#HTTP421">421</a></H2>
+		<H2><a href="#HTTP422">422</a></H2>
+		<H2><a href="#HTTP423">423</a></H2>
+		<H2><a href="#HTTP424">424</a></H2>
+		<H2><a href="#HTTP426">426</a></H2>
+		<H2><a href="#HTTP428">428</a></H2>
+		<H2><a href="#HTTP429">429</a></H2>
+		<H2><a href="#HTTP431">431</a></H2>
+		<H2><a href="#HTTP451">451</a></H2>
+		</details>
+		<HR>
+		<details><summary><H1><a href="#5RANGE">5.xx</a></H1></summary>
+		<H2><a href="#HTTP500">500</a></H2>
+		<H2><a href="#HTTP501">501</a></H2>
+		<H2><a href="#HTTP502">502</a></H2>
+		<H2><a href="#HTTP503">503</a></H2>
+		<H2><a href="#HTTP504">504</a></H2>
+		<H2><a href="#HTTP505">505</a></H2>
+		<H2><a href="#HTTP506">506</a></H2>
+		</details>
+		<HR>
+		</details>
+	</div>
+</div>
+</header>
+<HR>
+<!--
+<H1>Warning pages, Error pages and status pages</H1>
+!-->
+<HR>
+<section>
+<H1 id="1RANGE">1.xx <a href="#1RANGE">¶</a></H1>
+<H2>Informational response (experimental)</H2>
+<p>An informational response indicates that the request was received and understood. It is issued on a provisional basis while request processing continues. It alerts the client to wait for a final response. The message consists only of the status line and optional header fields, and is terminated by an empty line. As the HTTP/1.0 standard did not define any 1xx status codes, servers must not send a 1xx response to an HTTP/1.0 compliant client except under experimental conditions.</p>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP100">100</H1>
+<H2>View in separate page <a href="100_Status.html">100 (Continue)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP100_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>100 (Continue)</H3></summary>
+<p>The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it shouldn't send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server doesn't support expectations (this is the case, for example, of HTTP/1.0 servers).</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP101">101</H1>
+<H2>View in separate page <a href="101_Status.html">101 (Switching Protocols)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP101_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>101 (Switching Protocols)</H3></summary>
+<p>The requester has asked the server to switch protocols and the server has agreed to do so.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP102">102</H1>
+<H2>View in separate page <a href="102_Status.html">102 (Processing)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP102_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>102 (Processing)</H3></summary>
+<p>A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP103">103</H1>
+<H2>View in separate page <a href="103_Status.html">103 (Early hints)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP103_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>103 (Early hints)</H3></summary>
+<p>Used to return some response headers before final HTTP message.</p>
+</details>
+</section>
+</section>
+<HR>
+<section>
+<H1 id="2RANGE">2.xx<a href="#2RANGE">¶</a></H1>
+<H2>Success</H2>
+<p>This class of status codes indicates the action requested by the client was received, understood and accepted.</p>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP200">200</H1>
+<H2>View in separate page <a href="200_Status.html">200 (OK)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP200_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>200 (Ok)</H3></summary>
+<p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.</p>
+</details>
+</section>
+<HR>
+<!--
+<template>
+<p>Developer template</p>
+<!-- Add this to all sections today !-->
+<!--
+<H2>View as alert popup <a href="#">Click here</a></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>-</H3></summary>
+<p>
+</p>
+</details>
+<H2>View in separate page
+</template>
+<!-- divider !-->
+<!-- !- -> !-->
+<!-- Subsection !--><section>
+<H1 id="HTTP201">201</H1>
+<H2>View in separate page <a href="201_Status.html">201 (Created)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP201_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>201 (Created)</H3></summary>
+<p>The request has been fulfilled, resulting in the creation of a new resource.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP202">202</H1>
+<H2>View in separate page <a href="202_Status.html">202 (Accepted)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP202_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>202 (Accepted)</H3></summary>
+<p>The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP203">203</H1>
+<H2>View in separate page <a href="203_Status.html">203 (Non-Authoritative Information (since HTTP/1.1))</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP203_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>203 (Non-Authoritative Information (since HTTP/1.1))</H3></summary>
+<p>The server is a transforming proxy (e.g. a Web accelerator) that received a 200 OK from its origin, but is returning a modified version of the origin's response.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP204">204</H1>
+<H2>View in separate page <a href="204_Status.html">204 (no content)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP204_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>204 (No content)</H3></summary>
+<p>The server successfully processed the request and is not returning any content.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP205">205</H1>
+<H2>View in separate page <a href="205_Status.html">205 (Reset content)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP205_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>205 (Reset Content)</H3></summary>
+<p>The server successfully processed the request, but is not returning any content. Unlike a 204 response, this response requires that the requester reset the document view.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP206">206</H1>
+<H2>View in separate page <a href="206_Status.html">206 (Partial content)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP206_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>206 (Partial Content (RFC 7233))</H3></summary>
+<p>The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP207">207</H1>
+<H2>View in separate page <a href="207_Status.html">207 (Multi-Status)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP207_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>207 (Multi-Status (WebDAV; RFC 4918))</H3></summary>
+<p>The message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP208">208</H1>
+<H2>View in separate page <a href="208_Status.html">208 (Already Reported)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP208_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>208 (Already Reported (WebDAV; RFC 5842))</H3></summary>
+<p>The members of a DAV binding have already been enumerated in a preceding part of the (multistatus) response, and are not being included again.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP226">226</H1>
+<H2>View in separate page <a href="226_Status.html">226 (IM Used)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP226_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>226 (IM Used (RFC 3229))</H3></summary>
+<p>The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.</p>
+</details>
+</section>
+</section>
+<HR>
+<section>
+<H1 id="3RANGE">3.xx <a href="#3RANGE">¶</a></H1>
+<H2>Redirection</H2>
+<p>This class of status code indicates the client must take additional action to complete the request. Many of these status codes are used in URL redirection.</p> A user agent may carry out the additional action with no user interaction only if the method used in the second request is GET or HEAD. A user agent may automatically redirect a request. A user agent should detect and intervene to prevent cyclical redirects.</p>
+<!-- Subsection !--><section>
+<H1 id="HTTP300">300</H1>
+<H2>View in separate page <a href="300_Status.html">300 (Multiple Choices)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP300_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>300 (Multiple Choices)</H3></summary>
+<p>Indicates multiple options for the resource from which the client may choose (via agent-driven content negotiation). For example, this code could be used to present multiple video format options, to list files with different filename extensions, or to suggest word-sense disambiguation.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP301">301</H1>
+<H2>View in separate page <a href="301_Status.html">301 (Moved Permanently)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP301_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>301 (Moved Permanently)</H3></summary>
+<p>This and all future requests should be directed to the given URI</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP302">302</H1>
+<H2>View in separate page <a href="302_Status.html">302 (Found (Previously "Moved temporarily"))</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP302_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>302 (Found (Previously "Moved temporarily"))</H3></summary>
+<p>Tells the client to look at (browse to) another URL. 302 has been superseded by 303 and 307. This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was "Moved Temporarily"), but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours. However, some Web applications and frameworks use the 302 status code as if it were the 303.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP303">303</H1>
+<H2>View in separate page <a href="303_Status.html">303 (See Other)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP303_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>303 (See Other (since HTTP/1.1))</H3></summary>
+<p>The response to the request can be found under another URI using the GET method. When received in response to a POST (or PUT/DELETE), the client should presume that the server has received the data and should issue a new GET request to the given URI.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP304">304</H1>
+<H2>View in separate page <a href="304_Status.html">304 (Not Modified)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP304_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>304 (Not Modified (RFC 7232))</H3></summary>
+<p>Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP305">305</H1>
+<H2>View in separate page <a href="305_Status.html">305 (Use Proxy)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP305_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>305 (Use Proxy (since HTTP/1.1))</H3></summary>
+<p>The requested resource is available only through a proxy, the address for which is provided in the response. Many HTTP clients (such as Mozilla Firefox[27] and Internet Explorer) do not correctly handle responses with this status code, primarily for security reasons.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP305">306</H1>
+<H2>View in separate page <a href="306_Status.html">306 (Switch Proxy)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP306_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>306 (Switch Proxy)</H3></summary>
+<p>No longer used. Originally meant "Subsequent requests should use the specified proxy."</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP307">307</H1>
+<H2>View in separate page <a href="307_Status.html">307 (Temporary Redirect)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP307_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>307 (Temporary Redirect (since HTTP/1.1))</H3></summary>
+<p>In this case, the request should be repeated with another URI; however, future requests should still use the original URI. In contrast to how 302 was historically implemented, the request method is not allowed to be changed when reissuing the original request. For example, a POST request should be repeated using another POST request.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP308">308</H1>
+<H2>View in separate page <a href="308_Status.html">308 (Permanent Redirect)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP308_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>308 (Permanent Redirect (RFC 7538))</H3></summary>
+<p>The request and all future requests should be repeated using another URI. 307 and 308 parallel the behaviors of 302 and 301, but do not allow the HTTP method to change. So, for example, submitting a form to a permanently redirected resource may continue smoothly.</p>
+</details>
+</section>
+</section>
+<HR>
+<section>
+<H1 id="4RANGE">4.xx <a href="#4RANGE">¶</a></H1>
+<H2>Client errors</H2>
+<p>This class of status code is intended for situations in which the error seems to have been caused by the client. Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation, and whether it is a temporary or permanent condition. These status codes are applicable to any request method. User agents should display any included entity to the user.</p>
+<!-- Subsection !--><section>
+<H1 id="HTTP400">400</H1>
+<H2>View in separate page <a href="400_Status.html">400 (Bad request)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP400_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>400 (Bad Request)</H3></summary>
+<p>The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, size too large, invalid request message framing, or deceptive request routing).</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP401">401</H1>
+<H2>View in separate page <a href="401.html">401 (Unauthorized)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP401_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>401 ( Unauthorized (RFC 7235))</H3></summary>
+<p>Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. See Basic access authentication and Digest access authentication. 401 semantically means "unauthenticated", i.e. the user does not have the necessary credentials. Note: Some sites incorrectly issue HTTP 401 when an IP address is banned from the website (usually the website domain) and that specific address is refused permission to access a website.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP402">402</H1>
+<H2>View in separate page <a href="402_Status.html">402 (Payment required)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP402_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>402 (Payment required)</H3></summary>
+<p>Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used. Google Developers API uses this status if a particular developer has exceeded the daily limit on requests. Sipgate uses this code if an account does not have sufficient funds to start a call. Shopify uses this code when the store has not paid their fees and is temporarily disabled.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP403">403</H1>
+<H2>View in separate page <a href="403_Status.html">403 (Forbidden)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP403_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>403 (Forbidden)</H3></summary>
+<p>The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource, or may need an account of some sort.</p>
+</details>
+</section>
+<!-- OLD PAGE CONTENT FROM 2DSTART
+<H1>Applies to:</H1>
+<img src="GermanFlag.png" alt="GER" width="100" height="100">
+<img src="RussianFlag.png" alt="RU" width="100" height="100">
+<img src="SouthKoreaFlag.png" alt="SK" width="100" height="100">
+<img src="NorthKoreaFlag.png" alt="NK" width="100" height="100"> 
+<img src="IndiaFlag.png" alt="IND" width="100" height="100">
+<img src="PolandFlag.png" alt="IND" width="100" height="100">  
+<img src="CanadaFlag.png" alt="CAN" width="100" height="100">  
+<img src="USAFlag.png" alt="USA" width="100" height="100"> 
+<img src="ChinaFlag.png" alt="CHI" width="100" height="100"> 
+<img src="JapanFlag.png" alt="JAP" width="100" height="100"> 
+<img src="MexicanFlag.png" alt="MEX" width="100" height="100"> 
+<img src="EuropeFlag.png" alt="EU" width="100" height="100">
+<HR>
+<a href="403_GERMANY.html">403 (Germany)</a>
+<a href="403_RUSSIA.html">403 (Russia)</a>
+<a href="403_KOREA.html">403 (Korea)</a>
+<a href="403_INDIA.html">403 (India)</a>
+<a href="403_POLAND.html">403 (Poland)</a>
+<a href="403_CANADA.html">403 (Canada)</a>
+<a href="403_USA.html">403 (United States of America)</a>
+<a href="403_CHINA.html">403 (China)</a>
+<a href="403_JAPAN.html">403 (Japan)</a>
+<a href="403_MEXICO.html">403 (Mexico)</a>
+<a href="403_EUROPE.html">403 (Europe)</a>
+<H3>Certain pages can be blocked by the government, but can be reverted by a VPN. We are not responsible for any consequences when a VPN is used.</H3>
+<H3>Learn what a VPN is
+<a href="SNU_HELP_ABOUT_VPN.html">Click here</a>
+!-->
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP404">404</H1>
+<H2>View in separate page <a href="404_Status.html">404 (File not Found)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP404_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>404 (Not Found)</H3></summary>
+<p>The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP405">405</H1>
+<H2>View in separate page <a href="405_Status.html">405 (Method Not Allowed)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP405_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>405 (Method Not Allowed)</H3></summary>
+<p>A request method is not supported for the requested resource; for example, a GET request on a form that requires data to be presented via POST, or a PUT request on a read-only resource.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP406">406</H1>
+<H2>View in separate page <a href="406_Status.html">406 (Not Acceptable)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP406_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>406 (Not Acceptable)</H3></summary>
+<p>The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request. See Content negotiation.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP407">407</H1>
+<H2>View in separate page <a href="407_Status.html">407 (Proxy Authentication Required)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP407_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>407 (Proxy Authentication Required (RFC 7235))</H3></summary>
+<p>The client must first authenticate itself with the proxy.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP408">408</H1>
+<H2>View in separate page <a href="408_Status.html">408 (Request Timeout)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP408_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>408 (Request timeout)</H3></summary>
+<p>The server timed out waiting for the request. According to HTTP specifications: "The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time."</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP409">409</H1>
+<H2>View in separate page <a href="409_Status.html">409 (Conflict)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP409_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>409 (Conflict)</H3></summary>
+<p>Indicates that the request could not be processed because of conflict in the current state of the resource, such as an edit conflict between multiple simultaneous updates.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP410">410</H1>
+<H2>View in separate page <a href="410_Status.html">410 (Gone)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP410_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>410 (Gone)</H3></summary>
+<p>Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a "404 Not Found" may be used instead.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP411">411</H1>
+<H2>View in separate page <a href="411_Status.html">411 (Length Required)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP411_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>411 (Length required)</H3></summary>
+<p>The request did not specify the length of its content, which is required by the requested resource.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP412">412</H1>
+<H2>View in separate page <a href="412_Status.html">412 (Precondition Failed)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP412_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>412 (Precondition Failed (RFC 7232))</H3></summary>
+<p>The server does not meet one of the preconditions that the requester put on the request.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP413">413</H1>
+<H2>View in separate page <a href="413_Status.html">413 (Payload Too Large)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP413_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>413 (Payload Too Large (RFC 7231))</H3></summary>
+<p>The request is larger than the server is willing or able to process. Previously called "Request Entity Too Large".</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP414">414</H1>
+<H2>View in separate page <a href="414_Status.html">414 (URI Too Long)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP414_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>414 (URI Too Long (RFC 7231))</H3></summary>
+<p>The URI provided was too long for the server to process. Often the result of too much data being encoded as a query-string of a GET request, in which case it should be converted to a POST request. Called "Request-URI Too Long" previously.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP415">415</H1>
+<H2>View in separate page <a href="415_Status.html">415 (Unsupported Media Type)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP415_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>415 (Unsupported Media Type)</H3></summary>
+<p>The request entity has a media type which the server or resource does not support. For example, the client uploads an image as image/svg+xml, but the server requires that images use a different format.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP416">416</H1>
+<H2>View in separate page <a href="416_Status.html">416 (Range Not Satisfiable)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP416_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>416 (Range Not Satisfiable (RFC 7233))</H3></summary>
+<p>The client has asked for a portion of the file (byte serving), but the server cannot supply that portion. For example, if the client asked for a part of the file that lies beyond the end of the file. Called "Requested Range Not Satisfiable" previously.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP417">417</H1>
+<H2>View in separate page <a href="417_Status.html">417 (Expectation Failed)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP417_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>417 (Expectation Failed)</H3></summary>
+<p>The server cannot meet the requirements of the Expect request-header field.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP418">418</H1>
+<H2>View in separate page <a href="418_Status.html">418 (I'm a teapot)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP418_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>418 (I'm a teapot (RFC 2324, RFC 7168))</H3></summary>
+<p>This code was defined in 1998 as one of the traditional IETF April Fools' jokes, in RFC 2324, Hyper Text Coffee Pot Control Protocol, and is not expected to be implemented by actual HTTP servers. The RFC specifies this code should be returned by teapots requested to brew coffee. This HTTP status is used as an Easter egg in some websites, including Google.com.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP421">421</H1>
+<H2>View in separate page <a href="421_Status.html">421 (Misdirected Request)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP421_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>421 (Misdirected Request (RFC 7540))</H3></summary>
+<p>The request was directed at a server that is not able to produce a response (for example because of connection reuse).</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP422">422</H1>
+<H2>View in separate page <a href="422_Status.html">422 (Unprocessable Entity)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP422_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>422 (Unprocessable Entity (WebDAV; RFC 4918))</H3></summary>
+<p>The request was well-formed but was unable to be followed due to semantic errors.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP423">423</H1>
+<H2>View in separate page <a href="423_Status.html">423 (Locked)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP423_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>423 (Locked (WebDAV; RFC 4918))</H3></summary>
+<p>The resource that is being accessed is locked.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP424">424</H1>
+<H2>View in separate page <a href="424_Status.html">424 (Failed Dependency)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP424_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>424 (Failed Dependency (WebDAV; RFC 4918))</H3></summary>
+<p>The request failed because it depended on another request and that request failed (e.g., a PROPPATCH).</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP426">426</H1>
+<H2>View in separate page <a href="426_Status.html">426 (Upgrade Required)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP426_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>426 (Upgrade required)</H3></summary>
+<p>The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP428">428</H1>
+<H2>View in separate page <a href="428_Status.html">428 (Precondition Required)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP428_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>428 (Precondition Required (RFC 6585))</H3></summary>
+<p>The origin server requires the request to be conditional. Intended to prevent the 'lost update' problem, where a client GETs a resource's state, modifies it, and PUTs it back to the server, when meanwhile a third party has modified the state on the server, leading to a conflict.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP429">429</H1>
+<H2>View in separate page <a href="429_Status.html">429 (Too Many Requests)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP429_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>429 (Too Many Requests (RFC 6585))</H3></summary>
+<p>The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP431">431</H1>
+<H2>View in separate page <a href="431_Status.html">431 (Request Header Fields Too Large)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP431_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>431 (Request Header Fields Too Large (RFC 6585))</H3></summary>
+<p>The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP451">451</H1>
+<H2>View in separate page <a href="451_Status.html">451 (Unavailable For Legal Reasons)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP451_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>451 ( Unavailable For Legal Reasons (RFC 7725))</H3></summary>
+<p>A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource. The code 451 was chosen as a reference to the novel Fahrenheit 451 (see the Acknowledgements in the RFC).</p>
+</details>
+</section>
+</section>
+<HR>
+<section>
+<H1 id="5RANGE">5.xx <a href="#5RANGE">¶</a></H1>
+<H2>Server errors</H2>
+<p>The server failed to fulfil a request. Response status codes beginning with the digit "5" indicate cases in which the server is aware that it has encountered an error or is otherwise incapable of performing the request. Except when responding to a HEAD request, the server should include an entity containing an explanation of the error situation, and indicate whether it is a temporary or permanent condition. Likewise, user agents should display any included entity to the user. These response codes are applicable to any request method.</p>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP500">500</H1>
+<H2>View in separate page <a href="500_Status.html">500 (Internal Server Error)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP500_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>500 (Internal Server Error)</H3></summary>
+<p>A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP501">501</H1>
+<H2>View in separate page <a href="501_Status.html">501 (Not Implemented)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP501_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>501 (Not Implemented)</H3></summary>
+<p>The server either does not recognize the request method, or it lacks the ability to fulfil the request. Usually this implies future availability (e.g., a new feature of a web-service API).</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP502">502</H1>
+<H2>View in separate page <a href="502_Status.html">502 (Bad Gateway)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP502_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>502 (Bad Gateway)</H3></summary>
+<p>The server was acting as a gateway or proxy and received an invalid response from the upstream server.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP503">503</H1>
+<H2>View in separate page <a href="503_Status.html">503 (Service Unavailable)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP503_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>503 (Service Unavailable)</H3></summary>
+<p>The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP504">504</H1>
+<H2>View in separate page <a href="504_Status.html">504 (Gateway Timeout)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP504_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>504 (Gateway Timeout)</H3></summary>
+<p>The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP505">505</H1>
+<H2>View in separate page <a href="505_Status.html">505 (HTTP Version Not Supported)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP505_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>505 (HTTP Version Not Supported)</H3></summary>
+<p>The server does not support the HTTP protocol version used in the request.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP506">506</H1>
+<H2>View in separate page <a href="506_Status.html">506 (Variant Also Negotiates)</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP506_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>506 (Variant Also Negotiates (RFC 2295))</H3></summary>
+<p>Transparent content negotiation for the request results in a circular reference.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP506">507</H1>
+<H2>View in separate page <a href="507_Status.html">507 (Insufficient Storage (WebDAV; RFC 4918))</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP507_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>507 (Insufficient Storage (WebDAV; RFC 4918))</H3></summary>
+<p>The server is unable to store the representation needed to complete the request.</p>
+</details>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP506">508</H1>
+<H2>View in separate page <a href="508_Status.html">508 (Loop Detected (WebDAV; RFC 5842))</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP508_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>508 (Loop Detected (WebDAV; RFC 5842))</H3></summary>
+<p>The server detected an infinite loop while processing the request (sent instead of 208 Already Reported).</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP506">510</H1>
+<H2>View in separate page <a href="510_Status.html">510 (Not Extended (RFC 2774))</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP510_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>510 (Not Extended (RFC 2774))</H3></summary>
+<p>Further extensions to the request are required for the server to fulfil it.</p>
+</details>
+</section>
+<HR>
+<!-- Subsection !--><section>
+<H1 id="HTTP506">511</H1>
+<H2>View in separate page <a href="511_Status.html">511 (Network Authentication Required (RFC 6585))</a></H2>
+<H2>View as alert popup <button onclick="myVar = HTTP511_AlertMessage1()">Click here</button></H2>
+<H2>View as popup <a href="#">Click here</a></H2>
+<HR>
+<details><summary><H3>511 (Network Authentication Required (RFC 6585))</H3></summary>
+<p>The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network (e.g., "captive portals" used to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot).</p>
+</details>
+<!-- 507, 508, 510, 511 !-->
+</section>
+</section>
+<HR>
+<section>
+<H1 id="UNRANGE">Unofficial <a href="#UNRANGE">¶</a></H1>
+<H2>1.xx</H2>
+<p>--</p>
+<!--
+103
+218
+419
+420A
+420B
+450
+498
+499
+509
+526
+530
+598
+!-->
+<HR>
+<H1>Microsoft</H1>
+<p>--</p>
+<!--
+440
+449
+451
+!-->
+<HR>
+<H1>NGinx</H1>
+<p>--</p>
+<!--
+444
+494
+495
+496
+497
+499
+!-->
+<HR>
+<H1>Cloudflare</H1>
+<p>--</p>
+<!--
+520
+521
+522
+523
+524
+525
+526
+527
+530
+!-->
+<HR>
+<textarea col="40" rows="36">
+ADDING IN ANOTHER DAY
+======================
+UNOFFICIAL STANDARDS
+103
+218
+419
+420A
+420B
+450
+498
+499
+509
+526
+530
+598
+MICROSOFT
+440
+449
+451
+NGINX
+444
+494
+495
+496
+497
+499
+CLOUDFLARE
+520
+521
+522
+523
+524
+525
+526
+527
+530
+</textarea>
+</section>
+<HR>
+<header>
+<H1>Learn more about HTTPS status codes</H1>
+<H2>| <button><H3><a href="List of HTTPS status codes.pdf">PDF</a> from: Wikipedia</H3></button> | <button><H3>|>Source: <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Wikipedia</a></H3></button> |</H2>
+</header>
+<!--
+<embed src="List of HTTPS status codes.pdf" width="500" height="375">
+type="application/pdf">
+
+<p>You don't need to know all of this, however you can read about it if interested. Make yourself comfortable with it, you probably won't see these that often unless you purposefully go for them</p>
+<p>If you are receiving errors, and they do not go away, try contacting us</p>
+!-->
+<HR>
+<section>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H2 id="SnapshotSection">View older versions of this page</H2></summary>
+		<H1>Snapshots 1 to 10</H1>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot1.html">Snapshot 1 (December 16th 2019)</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot2.html">Snapshot 2 (December 17th 2019)</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot3.html">Snapshot 3 (December 18th 2019)</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot4.html">Snapshot 4 (December 19th 2019)</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot5.html">Snapshot 5</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot6.html">Snapshot 6</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot7.html">Snapshot 7</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot8.html">Snapshot 8</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot9.html">Snapshot 9</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot10.html">Snapshot 10</a></button></H3>
+		</details>
+	</div>
+</div>
+</section>
+<HR>
+<header>
+<H1>You have reached the bottom of this page</H1>
+</header>
+<HR>
+<footer>
+<p>Footer is not yet properly setup</p>
+</footer>
+</BODY>
+<!-- </BODY> !-->
+</HTML>
+<!-- End of script !-->

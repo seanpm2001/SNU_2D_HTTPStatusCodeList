@@ -1,0 +1,446 @@
+<!-- Start of script !-->
+<HTML>
+<BODY>
+<HEAD>
+<meta>
+	<meta charset="UTF-16">
+</meta>
+<TITLE>HTTP Status code list - SNU HTTP</TITLE>
+<BODY BGCOLOR="SILVER">
+<ruby>
+
+</ruby>
+<?
+// No PHP available
+?>
+<script>
+// Start of script
+// JavaScript console
+console.log("This page doesn't appear to be having any issues with HTTP");
+console.log("==\nJavaScript console for the HTTP status code list page");
+// End of script
+</script>
+<style>
+/* Headings */
+H1 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H2 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H3 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H4 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H5 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+H6 {
+	color: black;
+	font-family: "Liberation Serif";
+}
+</style>
+<!-- Divider !-->
+<style>
+/* Rich text */
+p {
+	color: black;
+	font-family: "Liberation Serif";
+}
+a {
+	color: navy;
+	font-family: "Tahoma";
+}
+</style>
+<style>
+/* Transparent boxes */
+div.background {
+	background: url(klematis.jpg) repeat;
+	border: 2px solid black;
+}
+div.transbox {
+	margin-top: 0px;
+	margin-bottom: 0px; 
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #00BFFF; /* The text was there, the background was the wrong color. A new beautiful shade of blue was added to fix this - April 6th 2019 */
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+div.transbox p {
+	margin: 1%; /* make sure this stays at 1%. At 5%, there is a large spacing issue between each new paragraph */
+	font-weight: bold;
+	color: #ffffff;
+}
+</style>
+</HEAD>
+<HR>
+<header>
+<H1>List of HTTP status codes (100-506)</H1>
+</header>
+<HR>
+<header>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H1>Index</H1></summary>
+		<HR>
+		<details><summary><H1><a href="#1RANGE">1.xx</a></H1></summary>
+		<H2><a href="#HTTP100">100</a></H2>
+		<H2><a href="#HTTP101">101</a></H2>
+		<H2><a href="#HTTP102">102</a></H2>
+		<H2><a href="#HTTP103">103</a></H2>
+		</details>
+		<HR>
+		<details><summary><H1><a href="#2RANGE">2.xx</a></H1></summary>
+		<H2><a href="#HTTP200">200</a></H2>
+		<H2><a href="#HTTP201">201</a></H2>
+		<H2><a href="#HTTP202">202</a></H2>
+		<H2><a href="#HTTP203">203</a></H2>
+		<H2><a href="#HTTP204">204</a></H2>
+		<H2><a href="#HTTP205">205</a></H2>
+		<H2><a href="#HTTP206">206</a></H2>
+		<H2><a href="#HTTP207">207</a></H2>
+		<H2><a href="#HTTP208">208</a></H2>
+		<H2><a href="#HTTP226">226</a></H2>
+		</details>
+		<HR>
+		<details><summary><H1><a href="#3RANGE">3.xx</a></H1></summary>
+		<H2><a href="#HTTP300">300</a></H2>
+		<H2><a href="#HTTP301">301</a></H2>
+		<H2><a href="#HTTP302">302</a></H2>
+		<H2><a href="#HTTP303">303</a></H2>
+		<H2><a href="#HTTP304">304</a></H2>
+		<H2><a href="#HTTP305">305</a></H2>
+		<H2><a href="#HTTP306">306</a></H2>
+		<H2><a href="#HTTP307">307</a></H2>
+		<H2><a href="#HTTP308">308</a></H2>
+		</details>
+		<HR>
+		<details><summary><H1><a href="#4RANGE">4.xx</a></H1></summary>
+		<H2><a href="#HTTP400">400</a></H2>
+		<H2><a href="#HTTP401">401</a></H2>
+		<H2><a href="#HTTP402">402</a></H2>
+		<H2><a href="#HTTP403">403</a></H2>
+		<H2><a href="#HTTP404">404</a></H2>
+		<H2><a href="#HTTP405">405</a></H2>
+		<H2><a href="#HTTP406">406</a></H2>
+		<H2><a href="#HTTP407">407</a></H2>
+		<H2><a href="#HTTP408">408</a></H2>
+		<H2><a href="#HTTP409">409</a></H2>
+		<H2><a href="#HTTP410">410</a></H2>
+		<H2><a href="#HTTP411">411</a></H2>
+		<H2><a href="#HTTP412">412</a></H2>
+		<H2><a href="#HTTP413">413</a></H2>
+		<H2><a href="#HTTP414">414</a></H2>
+		<H2><a href="#HTTP415">415</a></H2>
+		<H2><a href="#HTTP416">416</a></H2>
+		<H2><a href="#HTTP417">417</a></H2>
+		<H2><a href="#HTTP418">418</a></H2>
+		<H2><a href="#HTTP421">421</a></H2>
+		<H2><a href="#HTTP422">422</a></H2>
+		<H2><a href="#HTTP423">423</a></H2>
+		<H2><a href="#HTTP424">424</a></H2>
+		<H2><a href="#HTTP426">426</a></H2>
+		<H2><a href="#HTTP428">428</a></H2>
+		<H2><a href="#HTTP429">429</a></H2>
+		<H2><a href="#HTTP431">431</a></H2>
+		<H2><a href="#HTTP451">451</a></H2>
+		</details>
+		<HR>
+		<details><summary><H1><a href="#5RANGE">5.xx</a></H1></summary>
+		<H2><a href="#HTTP500">500</a></H2>
+		<H2><a href="#HTTP501">501</a></H2>
+		<H2><a href="#HTTP502">502</a></H2>
+		<H2><a href="#HTTP503">503</a></H2>
+		<H2><a href="#HTTP504">504</a></H2>
+		<H2><a href="#HTTP505">505</a></H2>
+		<H2><a href="#HTTP506">506</a></H2>
+		</details>
+		<HR>
+		</details>
+	</div>
+</div>
+</header>
+<HR>
+<!--
+<H1>Warning pages, Error pages and status pages</H1>
+!-->
+<section>
+<H1 id="1RANGE">1.xx <a href="#1RANGE">¶</a></H1>
+<H2>Informational response (experimental)</H2>
+<HR>
+<H1 id="HTTP100">100</H1>
+<a href="100_Status.html">100 (Continue)</a>
+<HR>
+<H1 id="HTTP101">101</H1>
+<a href="101_Status.html">101 (Switching Protocols)</a>
+<HR>
+<H1 id="HTTP102">102</H1>
+<a href="102_Status.html">102 (Processing)</a>
+<HR>
+<H1 id="HTTP103">103</H1>
+<a href="103_Status.html">103 (Early hints)</a>
+</section>
+<HR>
+<section>
+<H1 id="2RANGE">2.xx<a href="#2RANGE">¶</a></H1>
+<H2>Success</H2>
+<HR>
+<H1 id="HTTP200">200</H1>
+<a href="200_Status.html">200 (OK)</a>
+<HR>
+<H1 id="HTTP201">201</H1>
+<a href="201_Status.html">201 (Created)</a>
+<HR>
+<H1 id="HTTP202">202</H1>
+<a href="202_Status.html">202 (Accepted)</a>
+<HR>
+<H1 id="HTTP203">203</H1>
+<a href="203_Status.html">203 (Non-Authoritative Information (since HTTP/1.1))</a>
+<HR>
+<H1 id="HTTP204">204</H1>
+<a href="204_Status.html">204 (no content)</a>
+<HR>
+<H1 id="HTTP205">205</H1>
+<a href="205_Status.html">205 (Reset content)</a>
+<HR>
+<H1 id="HTTP206">206</H1>
+<a href="206_Status.html">206 (Partial content)</a>
+<HR>
+<H1 id="HTTP207">207</H1>
+<a href="207_Status.html">207 (Multi-Status)</a>
+<HR>
+<H1 id="HTTP208">208</H1>
+<a href="208_Status.html">208 (Already Reported)</a>
+<HR>
+<H1 id="HTTP226">226</H1>
+<a href="226_Status.html">226 (IM Used)</a>
+</section>
+<HR>
+<section>
+<H1 id="3RANGE">3.xx <a href="#3RANGE">¶</a></H1>
+<H2>Redirection</H2>
+<H1 id="HTTP300">300</H1>
+<a href="300_Status.html">300 (Multiple Choices)</a>
+<HR>
+<H1 id="HTTP301">301</H1>
+<a href="301_Status.html">301 (Moved Permanently)</a>
+<HR>
+<H1 id="HTTP302">302</H1>
+<a href="302_Status.html">302 (Found (Previously "Moved temporarily"))</a>
+<HR>
+<H1 id="HTTP303">303</H1>
+<a href="303_Status.html">303 (See Other)</a>
+<HR>
+<H1 id="HTTP304">304</H1>
+<a href="304_Status.html">304 (Not Modified)</a>
+<HR>
+<H1 id="HTTP305">305</H1>
+<a href="305_Status.html">305 (Use Proxy)</a>
+<HR>
+<H1 id="HTTP305">306</H1>
+<a href="306_Status.html">306 (Switch Proxy)</a>
+<HR>
+<H1 id="HTTP307">307</H1>
+<a href="307_Status.html">307 (Temporary Redirect)</a>
+<HR>
+<H1 id="HTTP308">308</H1>
+<a href="308_Status.html">308 (Permanent Redirect)</a>
+</section>
+<HR>
+<section>
+<H1 id="4RANGE">4.xx <a href="#4RANGE">¶</a></H1>
+<H2>Client errors</H2>
+<H1 id="HTTP400">400</H1>
+<a href="400_Status.html">400 (Bad request)</a>
+<HR>
+<H1 id="HTTP401">401</H1>
+<a href="401.html">401 (Unauthorized)</a>
+<HR>
+<H1 id="HTTP402">402</H1>
+<a href="402_Status.html">402 (Payment required)</a>
+<HR>
+<H1 id="HTTP403">403 [FORBIDDEN]</H1>
+<a href="403_Status.html">403 (Forbidden)</a>
+<HR>
+<!-- OLD PAGE CONTENT FROM 2DSTART
+<H1>Applies to:</H1>
+<img src="GermanFlag.png" alt="GER" width="100" height="100">
+<img src="RussianFlag.png" alt="RU" width="100" height="100">
+<img src="SouthKoreaFlag.png" alt="SK" width="100" height="100">
+<img src="NorthKoreaFlag.png" alt="NK" width="100" height="100"> 
+<img src="IndiaFlag.png" alt="IND" width="100" height="100">
+<img src="PolandFlag.png" alt="IND" width="100" height="100">  
+<img src="CanadaFlag.png" alt="CAN" width="100" height="100">  
+<img src="USAFlag.png" alt="USA" width="100" height="100"> 
+<img src="ChinaFlag.png" alt="CHI" width="100" height="100"> 
+<img src="JapanFlag.png" alt="JAP" width="100" height="100"> 
+<img src="MexicanFlag.png" alt="MEX" width="100" height="100"> 
+<img src="EuropeFlag.png" alt="EU" width="100" height="100">
+<HR>
+<a href="403_GERMANY.html">403 (Germany)</a>
+<a href="403_RUSSIA.html">403 (Russia)</a>
+<a href="403_KOREA.html">403 (Korea)</a>
+<a href="403_INDIA.html">403 (India)</a>
+<a href="403_POLAND.html">403 (Poland)</a>
+<a href="403_CANADA.html">403 (Canada)</a>
+<a href="403_USA.html">403 (United States of America)</a>
+<a href="403_CHINA.html">403 (China)</a>
+<a href="403_JAPAN.html">403 (Japan)</a>
+<a href="403_MEXICO.html">403 (Mexico)</a>
+<a href="403_EUROPE.html">403 (Europe)</a>
+<H3>Certain pages can be blocked by the government, but can be reverted by a VPN. We are not responsible for any consequences when a VPN is used.</H3>
+<H3>Learn what a VPN is
+<a href="SNU_HELP_ABOUT_VPN.html">Click here</a>
+!-->
+<HR>
+<H1 id="HTTP404">404 [FILE_NOT_FOUND]</H1>
+<a href="404_Status.html">404 (File not Found)</a>
+<HR>
+<H1 id="HTTP405">405</H1>
+<a href="405_Status.html">405 (Method Not Allowed)</a>
+<HR>
+<H1 id="HTTP406">406</H1>
+<a href="406_Status.html">406 (Not Acceptable)</a>
+<HR>
+<H1 id="HTTP407">407</H1>
+<a href="407_Status.html">407 (Proxy Authentication Required)</a>
+<HR>
+<H1 id="HTTP408">408</H1>
+<a href="408_Status.html">408 (Request Timeout)</a>
+<HR>
+<H1 id="HTTP409">409</H1>
+<a href="409_Status.html">409 (Conflict)</a>
+<HR>
+<H1 id="HTTP410">410</H1>
+<a href="410_Status.html">410 (Gone)</a>
+<HR>
+<H1 id="HTTP411">411</H1>
+<a href="411_Status.html">411 (Length Required)</a>
+<HR>
+<H1 id="HTTP412">412</H1>
+<a href="412_Status.html">412 (Precondition Failed)</a>
+<HR>
+<H1 id="HTTP413">413</H1>
+<a href="413_Status.html">413 (Payload Too Large)</a>
+<HR>
+<H1 id="HTTP414">414</H1>
+<a href="414_Status.html">414 (URI Too Long)</a>
+<HR>
+<H1 id="HTTP415">415</H1>
+<a href="415_Status.html">415 (Unsupported Media Type)</a>
+<HR>
+<H1 id="HTTP416">416</H1>
+<a href="416_Status.html">416 (Range Not Satisfiable)</a>
+<HR>
+<H1 id="HTTP417">417</H1>
+<a href="417_Status.html">417 (Expectation Failed)</a>
+<HR>
+<H1 id="HTTP418">418</H1>
+<a href="418_Status.html">418 (I'm a teapot)</a>
+<HR>
+<H1 id="HTTP421">421</H1>
+<a href="421_Status.html">421 (Misdirected Request)</a>
+<HR>
+<H1 id="HTTP422">422</H1>
+<a href="422_Status.html">422 (Unprocessable Entity)</a>
+<HR>
+<H1 id="HTTP423">423</H1>
+<a href="423_Status.html">423 (Locked)</a>
+<HR>
+<H1 id="HTTP424">424</H1>
+<a href="424_Status.html">424 (Failed Dependency)</a>
+<HR>
+<H1 id="HTTP426">426</H1>
+<a href="426_Status.html">426 (Upgrade Required)</a>
+<HR>
+<H1 id="HTTP428">428</H1>
+<a href="428_Status.html">428 (Precondition Required)</a>
+<HR>
+<H1 id="HTTP429">429</H1>
+<a href="429_Status.html">429 (Too Many Requests)</a>
+<HR>
+<H1 id="HTTP431">431</H1>
+<a href="431_Status.html">431 (Request Header Fields Too Large)</a>
+<HR>
+<H1 id="HTTP451">451</H1>
+<a href="451_Status.html">451 (Unavailable For Legal Reasons)</a>
+</section>
+<HR>
+<section>
+<H1 id="5RANGE">5.xx <a href="#5RANGE">¶</a></H1>
+<H2>Server errors</H2>
+<HR>
+<H1 id="HTTP500">500</H1>
+<a href="500_Status.html">500 (Internal Server Error)</a>
+<HR>
+<H1 id="HTTP501">501</H1>
+<a href="501_Status.html">501 (Not Implemented)</a>
+<HR>
+<H1 id="HTTP502">502</H1>
+<a href="502_Status.html">502 (Bad Gateway)</a>
+<HR>
+<H1 id="HTTP503">503</H1>
+<a href="503_Status.html">503 (Service Unavailable)</a>
+<HR>
+<H1 id="HTTP504">504</H1>
+<a href="504_Status.html">504 (Gateway Timeout)</a>
+<HR>
+<H1 id="HTTP505">505</H1>
+<a href="505_Status.html">505 (HTTP Version Not Supported)</a>
+<HR>
+<H1 id="HTTP506">506</H1>
+<a href="506_Status.html">506 (Variant Also Negotiates)</a>
+</section>
+<HR>
+<header>
+<H1>Learn more about HTTPS status codes</H1>
+<H2>| <button><H3><a href="List of HTTPS status codes.pdf">PDF</a> from: Wikipedia</H3></button> | <button><H3>|>Source: <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Wikipedia</a></H3></button> |</H2>
+</header>
+<!--
+<embed src="List of HTTPS status codes.pdf" width="500" height="375">
+type="application/pdf">
+
+<p>You don't need to know all of this, however you can read about it if interested. Make yourself comfortable with it, you probably won't see these that often unless you purposefully go for them</p>
+<p>If you are receiving errors, and they do not go away, try contacting us</p>
+!-->
+<HR>
+<section>
+<div class="background">
+	<div class="transbox">
+		<details><summary><H2 id="SnapshotSection">View older versions of this page</H2></summary>
+		<H1>Snapshots 1 to 10</H1>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot1.html">Snapshot 1 (December 16th 2019)</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot2.html">Snapshot 2 (December 17th 2019)</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot3.html">Snapshot 3</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot4.html">Snapshot 4</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot5.html">Snapshot 5</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot6.html">Snapshot 6</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot7.html">Snapshot 7</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot8.html">Snapshot 8</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot9.html">Snapshot 9</a></button></H3>
+		<H3><button><a href="HTTP_StatusCodeList_Snapshot10.html">Snapshot 10</a></button></H3>
+		</details>
+	</div>
+</div>
+</section>
+<HR>
+<header>
+<H1>You have reached the bottom of this page</H1>
+</header>
+<HR>
+<footer>
+<p>Footer is not yet properly setup</p>
+</footer>
+</BODY>
+<!-- </BODY> !-->
+</HTML>
+<!-- End of script !-->
